@@ -7,8 +7,8 @@
     <title>World Clock</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <div id="main-card">
+    <div class="main-card">
+      <h1>World Clock</h1>
       <select>
         <option value="">Choose a city...</option>
         <option value="">Paris</option>
@@ -17,24 +17,31 @@
         <option value="">Madrid</option>
       </select>
 
-      <div id="city-info">
-        <h2>Paris</h2>
-        <div id="date">May 28th 2024</div>
-        <div id="time">4:02 PM</div>
+      <div class="city">
+        <div>
+          <h2>Paris</h2>
+          <div id="date">May 28th 2024</div>
+        </div>
+        <div id="time">4:02:15 <small>PM</small></div>
       </div>
 
-      <div id="city-info">
-        <h2>London</h2>
-        <div id="date">May 28th 2024</div>
-        <div id="time">4:02 PM</div>
+      <div class="city">
+        <div>
+          <h2>London</h2>
+          <div id="date">May 28th 2024</div>
+        </div>
+        <div id="time">4:02:15 <small>PM</small></div>
       </div>
     </div>
+
     <footer>
-      This project was coded by Maja Popov and is open sorced on
+      This project was coded by <strong>Maja Popov</strong> and is open sorced
+      on
       <a href="https://github.com/PopovMaja/world-clock" target="_blank"
         >GitHub</a
       >
     </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
