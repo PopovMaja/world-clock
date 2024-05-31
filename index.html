@@ -11,31 +11,31 @@
   <body>
     <div class="main-card">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Choose a city...</option>
-        <option value="">Paris</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Madrid</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
-
-      <div class="city" id="paris">
-        <div>
-          <h2>Paris</h2>
-          <div id="date"></div>
+      <div id="cities">
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div id="date"></div>
+          </div>
+          <div id="time"></div>
         </div>
-        <div id="time"></div>
-      </div>
 
-      <div class="city" id="london">
-        <div>
-          <h2>London</h2>
-          <div id="date"></div>
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
+            <div id="date"></div>
+          </div>
+          <div id="time"></div>
         </div>
-        <div id="time"></div>
       </div>
     </div>
-
     <footer>
       This project was coded by <strong>Maja Popov</strong> and is open sorced
       on
