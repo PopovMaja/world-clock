@@ -1,11 +1,11 @@
 function updateTime() {
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector("#date");
-    let parisTimeElement = parisElement.querySelector("#time");
-    let parisTime = moment().tz("Europe/Paris");
-    parisDateElement.innerHTML = parisTime.format("dddd, MMMM Do, YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+  let newYorkElement = document.querySelector("#newYork");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector("#date");
+    let newYorkTimeElement = newYorkElement.querySelector("#time");
+    let newYorkTime = moment().tz("America/New_York");
+    newYorkDateElement.innerHTML = newYorkTime.format("dddd, MMMM Do, YYYY");
+    newYorkTimeElement.innerHTML = newYorkTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -41,7 +41,6 @@ function updateCity(event) {
         </div>
          <a href="/">Home page</a>`;
 }
-
 updateTime();
 setInterval(updateTime, 1000);
 
